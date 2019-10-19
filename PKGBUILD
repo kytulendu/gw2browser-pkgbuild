@@ -9,8 +9,8 @@ files."
 arch=('x86_64')
 url="https://github.com/kytulendu/gw2browser"
 license=('GPL3')
-depends=('libgw2dattools' 'libgw2formats' 'glm' 'glew' 'openal' 'libogg' 'libvorbis' 'mpg123' 'libwebp')
-makedepends=('cmake' 'libgw2dattools' 'libgw2formats' 'glm' 'glew' 'openal' 'libogg' 'libvorbis' 'mpg123' 'libwebp')
+depends=('libgw2dattools' 'libgw2formats' 'glm' 'glew' 'openal' 'libogg' 'libvorbis' 'mpg123' 'libwebp' 'wxgtk3-dev')
+makedepends=('cmake' 'libgw2dattools' 'libgw2formats' 'glm' 'glew' 'openal' 'libogg' 'libvorbis' 'mpg123' 'libwebp' 'wxgtk3-dev' 'wxgtk-common-dev')
 source=("git://github.com/kytulendu/gw2browser.git")
 sha256sums=('SKIP')
 
