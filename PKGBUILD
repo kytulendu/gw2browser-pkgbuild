@@ -19,17 +19,17 @@ prepare() {
 }
 
 pkgver() {
-    cd $_pkgname
+    cd "${srcdir}/$_pkgname"
     echo "1.0.r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
 }
 
 build() {
-    cd $_pkgname
+    cd "${srcdir}/$_pkgname"
     cmake . -DCMAKE_INSTALL_PREFIX="/usr"
     make
 }
 
 package() {
-    cd $_pkgname
+    cd "${srcdir}/$_pkgname"
     make DESTDIR="$pkgdir" install
 }
