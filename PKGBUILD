@@ -2,16 +2,16 @@
 
 pkgname=gw2browser
 _pkgname=gw2browser
-pkgver=1.0.r887.f3ac07d9
+pkgver=1.0.r921.8f06f75a
 pkgrel=1
 pkgdesc="Opens a Guild Wars 2 .dat file and allows the user to browse and extract its
 files."
 arch=('x86_64')
 url="https://github.com/kytulendu/gw2browser"
 license=('GPL3')
-depends=('libgw2dattools' 'libgw2formats' 'glm' 'glew' 'openal' 'libogg' 'libvorbis' 'mpg123' 'libwebp' 'wxgtk3-dev')
-makedepends=('cmake' 'libgw2dattools' 'libgw2formats' 'glm' 'glew' 'openal' 'libogg' 'libvorbis' 'mpg123' 'libwebp' 'wxgtk3-dev' 'wxgtk-common-dev')
-source=("git://github.com/kytulendu/gw2browser.git")
+depends=('libgw2dattools' 'libgw2formats' 'glm' 'glew' 'openal' 'libogg' 'libvorbis' 'mpg123' 'libwebp' 'wxwidgets-gtk3')
+makedepends=('cmake' 'libgw2dattools' 'libgw2formats' 'glm' 'glew' 'openal' 'libogg' 'libvorbis' 'mpg123' 'libwebp' 'wxwidgets-gtk3' 'wxwidgets-common')
+source=("git+https://github.com/kytulendu/gw2browser.git")
 sha256sums=('SKIP')
 
 prepare() {
